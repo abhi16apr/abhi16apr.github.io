@@ -444,6 +444,34 @@
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.6);
         }
 
+        /* Resume Section */
+        .resume {
+            background: transparent;
+        }
+
+        .resume-content {
+            background: rgba(25, 25, 25, 0.8);
+            border-radius: 16px;
+            padding: 3rem;
+            border: 1px solid rgba(102, 126, 234, 0.15);
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .resume-content p {
+            color: #b0b0b0;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .resume-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         /* Skills Section */
         .skills {
             background: rgba(25, 25, 25, 0.8);
@@ -725,6 +753,14 @@
             section h2 {
                 font-size: 2rem;
             }
+
+            .resume-buttons {
+                flex-direction: column;
+            }
+
+            .resume-buttons .btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -738,6 +774,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -955,6 +992,23 @@
         </div>
     </section>
 
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+        <div class="container">
+            <h2>My <span>Resume</span></h2>
+            <div class="resume-content">
+                <p>
+                    View and download my professional resume to learn more about my experience, education, and
+                    qualifications.
+                </p>
+                <div class="resume-buttons">
+                    <a href="Abhijeet_Resume.pdf" download class="btn btn-primary">📥 Download Resume</a>
+                    <a href="Abhijeet_Resume.pdf" target="_blank" class="btn btn-secondary">👁️ View Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section class="skills" id="skills">
         <div class="container">
@@ -1041,7 +1095,7 @@
             <div class="contact-content">
                 <div class="contact-item">
                     <span>📧</span>
-                    <a href="mailto:abhijeet.malviya0499@gmail.com">abhijeet.malviya0499@gmail.com</a>
+                    <a href="mailto:abhijeet.malviya@unlv.edu">abhijeet.malviya@unlv.edu</a>
                 </div>
                 <div class="contact-item">
                     <span>💼</span>
@@ -1061,7 +1115,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Abhijeet. All rights reserved.</p>
+            <p>&copy; 2026 Abhijeet. All rights reserved.</p>
             <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Crafted with ❤️ using HTML, CSS & JavaScript
             </p>
         </div>
