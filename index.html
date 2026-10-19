@@ -444,6 +444,69 @@
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.6);
         }
 
+        /* Organizations Section */
+        .organizations {
+            background: transparent;
+        }
+
+        .org-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .org-card {
+            background: rgba(25, 25, 25, 0.8);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s;
+            border: 1px solid rgba(102, 126, 234, 0.15);
+        }
+
+        .org-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .org-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .org-role {
+            color: #667eea;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .org-description {
+            color: #b0b0b0;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .org-link {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-weight: 700;
+        }
+
+        .org-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.6);
+        }
+
         /* Resume Section */
         .resume {
             background: transparent;
@@ -774,6 +837,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#organizations">Organizations</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -992,6 +1056,26 @@
         </div>
     </section>
 
+    <!-- Organizations & Leadership Section -->
+    <section class="organizations" id="organizations">
+        <div class="container">
+            <h2>Organizations & <span>Leadership</span></h2>
+            <div class="org-grid">
+                <div class="org-card">
+                    <div class="org-title">🐍 PyData St. Louis</div>
+                    <div class="org-role">Online Chair</div>
+                    <p class="org-description">
+                        Leading the PyData St. Louis community as Online Chair, organizing events, fostering discussions
+                        around data science, Python, and AI/ML technologies. Dedicated to building a vibrant community
+                        of data professionals and enthusiasts.
+                    </p>
+                    <a href="https://stlouis.pydata.org/organizers/" target="_blank" class="org-link">View Organizers
+                        →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Resume Section -->
     <section class="resume" id="resume">
         <div class="container">
@@ -1095,7 +1179,7 @@
             <div class="contact-content">
                 <div class="contact-item">
                     <span>📧</span>
-                    <a href="mailto:abhijeet.malviya@unlv.edu">abhijeet.malviya@unlv.edu</a>
+                    <a href="mailto:malvia1@unlv.nevada.edu">malvia1@unlv.nevada.edu</a>
                 </div>
                 <div class="contact-item">
                     <span>💼</span>
@@ -1115,7 +1199,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Abhijeet. All rights reserved.</p>
+            <p>&copy; 2024 Abhijeet. All rights reserved.</p>
             <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">Crafted with ❤️ using HTML, CSS & JavaScript
             </p>
         </div>
